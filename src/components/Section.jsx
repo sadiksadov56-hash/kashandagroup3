@@ -1,7 +1,7 @@
-import React from 'react'
-
-
-<style>{`
+const Hero = () => {
+  return (
+    <section style={{ paddingTop: '72px', background: '#f9f9f7', minHeight: '100vh', fontFamily: 'sans-serif' }}>
+      <style>{`
         .hero-grid {
           display: grid;
           grid-template-columns: 1fr 1fr;
@@ -95,7 +95,6 @@ import React from 'react'
         .stats-row {
           display: flex;
           align-items: center;
-          gap: 0;
         }
         .stat-item {
           flex: 1;
@@ -143,7 +142,7 @@ import React from 'react'
           grid-template-columns: repeat(4, 1fr);
           gap: 2px;
           background: #e5e5e5;
-          margin: 2px 0 0;
+          margin: 24px 0 0;
         }
         .product-card {
           background: #f9f9f7;
@@ -163,9 +162,7 @@ import React from 'react'
           transition: transform 0.6s cubic-bezier(0.4,0,0.2,1);
         }
         .product-card:hover .product-img-wrap img { transform: scale(1.06); }
-        .product-info {
-          padding: 20px;
-        }
+        .product-info { padding: 20px; }
         .product-cat {
           font-size: 9px;
           letter-spacing: 0.25em;
@@ -186,17 +183,8 @@ import React from 'react'
           align-items: center;
           justify-content: space-between;
         }
-        .product-price {
-          font-size: 16px;
-          font-weight: 300;
-          color: #1a1a1a;
-        }
-        .product-old {
-          font-size: 12px;
-          color: #bbb;
-          text-decoration: line-through;
-          margin-left: 8px;
-        }
+        .product-price { font-size: 16px; font-weight: 300; color: #1a1a1a; }
+        .product-old { font-size: 12px; color: #bbb; text-decoration: line-through; margin-left: 8px; }
         .product-add {
           width: 32px;
           height: 32px;
@@ -211,10 +199,7 @@ import React from 'react'
           transform: translateY(4px);
           transition: opacity 0.2s, transform 0.2s;
         }
-        .product-card:hover .product-add {
-          opacity: 1;
-          transform: translateY(0);
-        }
+        .product-card:hover .product-add { opacity: 1; transform: translateY(0); }
         .badge-sale {
           position: absolute;
           top: 12px;
@@ -265,13 +250,6 @@ import React from 'react'
         }
         .see-all:hover { color: #1a1a1a; gap: 12px; }
       `}</style>
-      
-const Section = () => {
-  return (
-    <>
-        
-    <section style={{ paddingTop: '72px', background: '#f9f9f7', minHeight: '100vh', fontFamily: 'sans-serif' }}>
-      
 
       <div className="hero-grid">
         <div className="hero-left">
@@ -309,10 +287,7 @@ const Section = () => {
         </div>
 
         <div className="hero-right">
-          <img
-            src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=900&q=85"
-            alt="hero"
-          />
+          <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=900&q=85" alt="hero" />
           <div className="overlay-badge">
             <span style={{ fontSize: '9px', letterSpacing: '0.25em', textTransform: 'uppercase', color: '#aaa', display: 'block', marginBottom: '6px' }}>Хит сезона</span>
             <p style={{ fontSize: '14px', color: '#1a1a1a', margin: '0 0 8px', fontWeight: 400 }}>Oversized Blazer</p>
@@ -329,8 +304,7 @@ const Section = () => {
         <a href="#" className="see-all">Смотреть все <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
       </div>
 
-      <div className="products-row" style={{ margin: '24px 0 0' }}>
-
+      <div className="products-row">
         <div className="product-card">
           <div className="product-img-wrap">
             <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=500&q=80" alt="p1" />
@@ -403,14 +377,10 @@ const Section = () => {
             </div>
           </div>
         </div>
-
       </div>
 
     </section>
-  
-
-    </>
   )
 }
 
-export default Section
+export default Hero
