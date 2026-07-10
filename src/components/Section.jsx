@@ -257,9 +257,9 @@ const Hero = () => {
             <span className="hero-tag">Коллекция 2024</span>
           </div>
           <div>
-            <h1 className="hero-title">
-              Вещи<br />которые <em>говорят</em><br />за тебя
-            </h1>
+            <mark className="hero-title">
+              Вещи<br />которые <em>говорят</em><br />за тебя пидр
+            </mark>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '32px' }}>
             <p style={{ fontSize: '14px', color: '#888', lineHeight: 1.7, maxWidth: '320px', margin: 0 }}>
