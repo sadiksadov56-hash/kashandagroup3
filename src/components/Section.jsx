@@ -289,7 +289,7 @@ const Hero = () => {
         <div className="hero-right">
           <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=900&q=85" alt="hero" />
           <div className="overlay-badge">
-            <span style={{ fontSize: '9px', letterSpacing: '0.25em', textTransform: 'uppercase', color: '#aaa', display: 'block', marginBottom: '6px' }}>Хит сезона</span>
+            <span style={{ fontSize: '9px', letterSpacing: '0.25em', textTransform: 'uppercase', color: '#d7d1d1', display: 'block', marginBottom: '6px' }}>Хит сезона</span>
             <p style={{ fontSize: '14px', color: '#1a1a1a', margin: '0 0 8px', fontWeight: 400 }}>Oversized Blazer</p>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
               <span style={{ fontSize: '18px', fontWeight: 300, color: '#1a1a1a' }}>12 490 ₽</span>
